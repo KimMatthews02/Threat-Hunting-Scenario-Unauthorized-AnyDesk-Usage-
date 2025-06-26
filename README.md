@@ -20,9 +20,9 @@ Additionally, a cybersecurity news bulletin highlighted a recent phishing campai
 | **DeviceNetworkEvents** | [Link](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table) - Monitors outbound connections made by `AnyDesk.exe`, especially to AnyDesk relay IPs and ports. |
 
 High-Level TOR-Related IoC Discovery Plan
-Check DeviceFileEvents for any AnyDesk(.exe) file events.
-Check DeviceProcessEvents for any signs of installation or usage.
-Check DeviceNetworkEvents for any signs of outgoing connections over known any ports.
+|Check DeviceFileEvents for any AnyDesk(.exe) file events.|
+|Check DeviceProcessEvents for any signs of installation or usage.|
+|Check DeviceNetworkEvents for any signs of outgoing connections over known any ports.|
 
 Related queries
 
