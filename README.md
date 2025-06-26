@@ -10,6 +10,9 @@ Additionally, a cybersecurity news bulletin highlighted a recent phishing campai
 | **DeviceFileEvents**    | [Link](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) - Detects the download and installation of AnyDesk, and creation/deletion of suspicious files.       |
 | **DeviceProcessEvents** | [Link](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) - Detects silent install, execution of AnyDesk processes, and clipboard interactions.             |
 | **DeviceNetworkEvents** | [Link](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table) - Monitors outbound connections made by `AnyDesk.exe`, especially to AnyDesk relay IPs and ports. |
+
+Related queries
+
 // Detect AnyDesk being downloaded
 DeviceFileEvents
 | where FileName =~ "AnyDesk.exe"
