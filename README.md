@@ -1,10 +1,18 @@
 # Threat Event (Unauthorized AnyDesk Usage)
 Installation and Use of AnyDesk for Remote Access Without Authorization
 
+## Platforms and Languages Leveraged
+- Windows 10 Virtual Machines (Microsoft Azure)
+- EDR Platform: Microsoft Defender for Endpoint
+- Kusto Query Language (KQL)
+- AnyDesk Browser
+
+##  Scenario
+
 Reason for the Hunt:
 Unusual system behavior was reported on multiple endpoints, including sudden performance lag and clipboard access alerts.
-
 Additionally, a cybersecurity news bulletin highlighted a recent phishing campaign using AnyDesk for lateral movement and persistence.
+
 | **Parameter**           | **Description**                                                                                                                                                                                     |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **DeviceFileEvents**    | [Link](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) - Detects the download and installation of AnyDesk, and creation/deletion of suspicious files.       |
